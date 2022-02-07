@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta property="og:image" content="images/super-paint-screenshot.png">
+  <script src="https://cdn.jsdelivr.net/npm/@jaames/iro@5"></script>
+  <link rel="icon" type="image/png" href="images/favicon.png"/>
+  <link rel="stylesheet" href="style.css">
+  <title>Super Paint</title>
+</head>
+<body>
+  <h3 id="version">v1.1.0</h3>
+  <h3 id="warning">Not optimized for mobile yet. Please switch to desktop</h3>
+  <div id="canvas-container">
+    <div id="canvas-center">
+      <canvas id="canvas1" width="600px" height="600px" >Please switch to a browser that supports HTML5 canvas</canvas>
+      <div id="iro-color-picker"></div>
+    </div>
+    
+  </div>
+
+  <div id="buttons-container">
+    <div id="tool-container">
+      <div id="clear-btn-container">
+        <button id="clear-btn">Clear Canvas</button>
+        <button id="size-down">&lt;</button>
+        <div id="size-indicator"><p id="size">1</p></div>
+        <button id="size-up">&gt;</button>
+      </div>
+      <div id="d-tools-container">
+
+        <button id="pencil">Pencil</button>
+        <button id="circle-brush">Circle</button>
+        <button id="square-brush">Square</button>
+        <button id="eraser">Eraser</button>
+      </div>
+    </div>
+
+    <div id="color-options">
+      <button id="red"></button>
+      <button id="green"></button>
+      <button id="blue"></button>
+      <button id="black"></button>
+      <button id="white"></button>
+      <button id="picker-btn"></button>
+      <button id="current-color"></button>
+    </div>
+  </div>
+
+
+  <script src="main.js"></script>
+</body>
+</html>
